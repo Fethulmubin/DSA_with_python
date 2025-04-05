@@ -4,7 +4,7 @@ class Solution(object):
         if rows == 0:
             return True
         cols = len(matrix[0])
-        
+    
         i = 0
         while i < rows - 1:
             j = 0
