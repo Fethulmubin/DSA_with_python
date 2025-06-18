@@ -1,0 +1,2 @@
+sort method update our 1st list but sorted method creates a new array or list
+adding two lists using + and extend method() the former will not change the first values 
