@@ -70,4 +70,4 @@ minStack.push(4)
 
 # stack becomes [3, 5, 2]
 # minStack becomes [3, 3, 2]
-# since you work on min value added when push is called, it is immposible you to get the last elemwnt of stack greater than minStack always if you compare the last elements paralelly you got minStack less.
+# since you work on min value added when push is called, it is impossible you to get the last element of stack greater than minStack always if you compare the last elements paralelly you got minStack less.
