@@ -77,7 +77,7 @@ class Solution(object):
         self.Quick(nums, 0, len(nums) - 1)
         return nums
     def Quick(self, nums, start, end):
-        if pivot - left + 1 <= 1:
+        if end - start + 1 <= 1:
             return nums
         pivot = nums[end]
         left = start
@@ -91,7 +91,7 @@ class Solution(object):
         nums[end] = nums[left]
         nums[left] = pivot
         
-        self.Quick(nums, start, end - 1)
+        self.Quick(nums, start, left - 1)
         self.Quick(nums, left + 1, end)
         
         return nums
