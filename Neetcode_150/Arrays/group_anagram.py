@@ -28,3 +28,23 @@ sol = Solution()
 print(sol.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
 # Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
 # Explanation: The function groups the anagrams together in lists.
+
+
+# bucket sort approach:# from collections import defaultdict
+class Solution(object):
+    def sortColors(self, nums):
+        count = [0, 0, 0]
+        for i in nums:
+            count[i] += 1
+        i = 0
+        for n in range(len(count)):
+            for j in range(count[n]):
+                nums[i] = n
+                i += 1
+        return nums
+# Example usage:
+sol = Solution()
+print(sol.sortColors([2, 0, 2, 1, 1, 0]))
+# Output: [0, 0, 1, 1, 2, 2]
+# Explanation: The function sorts the colors in-place using a counting sort approach.
+# This code defines a class Solution with a method groupAnagrams that groups anagrams from a list of strings.
