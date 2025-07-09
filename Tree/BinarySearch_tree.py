@@ -61,3 +61,22 @@ class Solution(object):
 # the else condition handles the case where they split this means 
 # p < root < q or p > root > q or one of them is equal to root
 # Example usage:
+# root = TreeNode(6)
+# root.left = TreeNode(2)
+# root.right = TreeNode(8)
+# root.left.left = TreeNode(0)
+# root.left.right = TreeNode(4)
+# root.left.right.left = TreeNode(3)
+# root.left.right.right = TreeNode(5)
+# root.right.left = TreeNode(7)
+# root.right.right = TreeNode(9)
+# p = root.left  # Node with value 2
+# q = root.right  # Node with value 8
+# solution = Solution()
+# result = solution.lowestCommonAncestor(root, p, q)
+# if result:
+#     print("Lowest Common Ancestor:", result.val)
+# else:
+#     print("No common ancestor found")
+# This will output: Lowest Common Ancestor: 6
+
